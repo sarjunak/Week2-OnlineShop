@@ -1,0 +1,326 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html,body{
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    
+    font-size: 10;
+    font-weight: 400;
+}
+a{
+    color: rgb(199, 31, 31);
+}
+#badge {
+  position: absolute;
+  border-radius: 25%;
+  padding-right: 2px;
+  color: rgb(237, 40, 40);
+  font-size: 14px;
+  font-weight: bolder;
+}
+.bg-light{
+    background-color: white!important;
+}
+.navbar.navbar-default {
+    margin-bottom: 0px;
+  }
+  
+  .navbar .navbar-brand img {
+    max-width: 180px;
+  }
+  .navbar form input[type="search"] {
+    border-radius: 0;
+    height: 2em;
+    background: #fff
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'/%3E%3C/svg%3E")
+      no-repeat 95%;
+  }
+  .navbar form input[type="search"]:focus {
+    background: #fff;
+    box-shadow: none;
+  }
+  .navbar {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.18);
+  }
+  .navbar-collapse .navbar-nav .nav-link {
+    color: #000;
+  }
+  .user-icons div {
+    color: #000;
+  }
+  .search-and-icons {
+    width: 50%;
+  }
+  .navbar form {
+    flex: 1;
+  }
+  .dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  .dropdown-menu.show {
+    display: flex;
+  }
+  .dropdown-item
+  {
+    background-color: white !important;
+  }
+  .dropdown-menu li:first-child a {
+    font-weight: bold;
+    font-size: .8em;
+    text-transform: uppercase;
+    border-bottom:solid transparent;
+    color: #000000;
+  }
+
+  .dropdown-menu li .dropdown-item {
+    color: rgb(4, 3, 3);
+    font-size: .7em;
+    padding: 0.5em 1em;
+  }
+  .dropdown-menu {
+    border: none;
+    border-radius: 0;
+    padding: 0.7em;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  .dropdown-menu li:first-child :hover
+  {
+    border-bottom: 1px solid green;
+  }
+
+.figure a
+{
+  
+  text-decoration: none;
+  color: #000;
+}
+.figure-caption
+{
+    color: #000 !important;
+    font-weight: bolder !important;
+  font-size: 17px !important;
+}
+.shopbycategory
+{
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    justify-content: center;
+}
+.shopbycategory li
+{
+    display: flex;
+    align-items: center;
+list-style: none;
+}
+.shopbycategory li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-bottom:solid #000 transparent;
+}
+.shopbycategory li a:hover
+{
+    border-bottom:solid #000 transparent;
+}
+.btn-group 
+{
+    display: block !important;
+    
+}
+.categorybtn
+{
+    
+    border: none;
+    border-radius: 0 !important;
+    border-bottom:.2px solid #000;
+}
+.btn{
+font-size: 20px;
+}
+.btn:hover
+{
+    border-bottom:2px solid #0e82e1;
+}
+.btn-info
+{
+  text-align: center;
+  font-size: 14px;
+}
+.category-para{ font-size: 14px;}
+.test{display: none ;}
+.text-white
+{
+  text-decoration: none;
+  color: rgb(6, 5, 5) !important;
+}
+/*carosel*/
+
+
+/*carosel ends*/
+ @media screen and (min-width: 768px) {
+    .navbar-collapse {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-end;
+    }
+    .navbar .navbar-brand img {
+      max-width: 6em;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .navbar {
+      letter-spacing: 0.05em;
+    }
+    .navbar-collapse .navbar-nav .nav-link {
+      padding: 0.2em 1em;
+    }
+    .navbar .navbar-brand img {
+      max-width: 7em;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .search-and-icons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+    }
+   
+  }
+  .user-icons div {
+    padding-right: 1em;
+    font-size: 1.2em;
+  }
+  
+ 
+
+  @media only screen and (max-width: 992px) {
+    .dropdown:hover .dropdown-menu {
+      max-height: 350px;
+      overflow-y: scroll;
+    }
+    .dropdown-menu.show {
+        flex-wrap: wrap;
+        max-height: 350px;
+        overflow-y: scroll;
+      }
+  }
+ 
+  @media only screen and (min-width: 992px) and (max-width: 1140px) {
+    .dropdown:hover .dropdown-menu {
+      width: 40vw;
+      flex-wrap: wrap;
+      display: flex;
+    }
+   
+      .dropdown-menu.show {
+        display: flex;
+      }
+  }
+
+
+
+  .divider {border: 1px solid #ccc;}
+img {width:100%;}
+
+
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+ 
+.modal-wrapper {
+    width: 300px;
+    height: 300px;
+    background: rgb(251, 245, 222);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding-left: 10px;
+    transform: translate(-50%, -50%);
+}
+
+.modal-wrapper  h1{
+  font-size: 28px;
+  text-align: center;
+  color: #032d50;
+}
+.modal-content
+{
+  font-size: 10px;
+  text-align: center;
+  color: #032d50;
+ 
+}
+.open-modal-btn-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+ 
+.close-modal-btn,
+.open-modal-btn {
+    padding: 8px;
+    background: rgb(81, 80, 84);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    color: ghostwhite;
+   margin-left: auto;
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+ 
+.close-btn-wrapper {
+    display: flex;
+}
+ 
+.modal-content {
+    margin: 20px auto;
+    max-width: 210px;
+    width: 100%;
+}
+ 
+.hide {
+    display: none;
+}
+.lognmodal-wrapper {
+  width: 400px;
+  height: 400px;
+  background: rgb(244, 243, 241);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding-left: 10px;
+  transform: translate(-50%, -50%);
+}
+.lognmodal-content,.modal-body
+{
+  margin: 20px auto;
+    max-width: 300px;
+    padding:5px 5px;
+    width: 100%;
+    
+}
+.form-group
+{
+  padding-bottom: 2px;
+  
+}
+
+/**  testing for card carousel*/
+
